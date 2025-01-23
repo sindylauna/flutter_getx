@@ -120,6 +120,7 @@ class YourEventView extends GetView {
                       icon: Icon(Icons.delete, color: Colors.red),
                       label:const Text('Delete', style: TextStyle(color: Colors.red)),
                       onPressed: () {
+                        controller.deleteEvent(id: event.id!);
 
                        }, 
                       ),
